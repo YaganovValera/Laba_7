@@ -1,0 +1,105 @@
+<!doctype html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="resume, django, html, css">
+    <meta name="description" content="Визитка для лабораторной работы №7">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href={% static "pages/style.css" %}>
+</head>
+
+<body>
+    <header>
+        <h1>Лабораторная работа №7</h1>
+    </header>
+
+    <div class="info">
+        <img src= {% static "pages/my_foto.JPG" %} alt="Яганов Валерий" class="img">
+
+        <div class="info_text">
+            <h2>Яганов Валерий</h2>
+            <p>О себе: Люблю путешествовать, заниматься спортом и программировать.</p>
+
+            <h4>Список социальных сетей:</h4>
+            <a href="https://vk.com/v.yaganov4" target="_blank">VK</a>
+            |
+            <a href="https://t.me/Valera_Yaganov" target="_blank">Telegram</a>
+        </div>
+    </div>
+
+    <div class="container hobby">
+        <h3>Мои хобби</h3>
+
+        <ol>
+            <li>Плаванье</li>
+            <li>Настольный теннис</li>
+            <li>Рисование</li>
+        </ol>
+    </div>
+
+    <div class="container education">
+        <h3>Образование</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Город</th>
+                    <th>Год</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Средняя школа №53</td>
+                    <td>Ульяновск</td>
+                    <td>2010-2019</td>
+                </tr>
+                <tr>
+                    <td>лицей при УлГТУ</td>
+                    <td>Ульяновск</td>
+                    <td>2019-2021</td>
+                </tr>
+                <tr>
+                    <td>УлГТУ (ФИСТ)</td>
+                    <td>Ульяновск</td>
+                    <td>2021-2025</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <form action="/" class="form">
+        <h2>Связаться со мной</h2>
+
+        <div class="group">
+
+            <div class="forms">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" placeholder="Введите имя">
+            </div>
+
+            <div class="forms">
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" placeholder="Введите email">
+            </div>
+        </div>
+
+        <div class="forms">
+            <label for="message">Ваше сообщение:</label>
+            <textarea cols="20" rows="5" id="message" placeholder="Введите сообщение..."></textarea>
+        </div>
+
+        <input class="btn" type="submit" value="Отправить">
+    </form>
+
+    <br>
+    <br>
+    <br>
+
+</body>
+</html>
+

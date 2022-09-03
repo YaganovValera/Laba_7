@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    background: #FFE4C4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    max-width: 750px;
+    margin: auto;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+header {
+    text-align: center;
+}
+
+.img{
+    height: 450px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.info {
+    display: flex;
+    margin-bottom: 20px;
+}
+.info_text{
+    margin-left: 20px;
+}
+.info_text p {
+    font-style: italic;
+    margin: 0;
+}
+.info_text h4{
+    margin-bottom: 5px;
+}
+
+
+.container h3{
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.hobby, .education, .form{
+    background: #FFEBCD;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Обработка таблицы */
+.education .table{
+    padding-left: 10px;
+    width: 75%;
+}
+.education th, .education td{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+/* Обработка ссылок */
+a{
+    color: rgb(63, 55, 55);
+    text-decoration: none;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+a:hover{
+    color:crimson;
+    text-decoration: underline;
+}
+
+/* Обработка формы */
+.form h2{
+    text-align: center;
+}
+
+.forms label{
+    display: block;
+    font-size: 14px;
+    color: black;
+    padding-left: 20px;
+}
+.forms input, .forms textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color:black;
+    outline: none;
+    padding: 5px 20px 10px;
+    margin-right: 20px;
+}
+.group {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.group .forms {
+    margin-right: 20px;
+    width: 50%;
+}
+
+.group .forms:last-child {
+    margin-right: 0;
+}
+/* Кнопка*/
+.btn {
+    font-size: 20px;
+    background: #FFEBCD;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: black;
+    display: block;
+    margin: 0 auto;
+}
+.btn:hover {
+    opacity: 0.5;
+}
+
